@@ -4,7 +4,6 @@ import React from "react";
 function extractDate (d) {
     const [date, time] = d.split("T");
     let newDate = date.split("-").reverse().join("-");
-    console.log("date", date, "time", time);
     return `${newDate}`;
 }
 
