@@ -30,7 +30,7 @@ const RectangleCard = ({ title, balance, icon }) => {
 
   }, [expenses]);
   return (
-    <div className="grid grid-flow-col">
+    <div className="flex flex-wrap justify-between">
     <Card title="Income" amount={totalIncome} icon={<TbCoinRupeeFilled />} />
     <Card title="Balance" amount={totalIncome - totalExpense} icon={<TbCoinRupeeFilled />} />
     <Card title="Expense" amount={totalExpense} icon={<TbCoinRupeeFilled />} />
