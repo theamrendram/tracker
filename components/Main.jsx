@@ -7,8 +7,10 @@ import RectangleCard from './Header';
 const Main = () => {
   return (
     <ExpenseProvider>
+    <div className='p-2'>
       <RectangleCard />
       <DisplayData />
+    </div>
     </ExpenseProvider>
   );
 }
